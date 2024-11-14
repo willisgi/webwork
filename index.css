@@ -1,0 +1,353 @@
+*{
+    list-style-type: none;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    /* max-width: 90%; */
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+}
+header {
+    background: green;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(183, 88, 88);
+}
+
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    /* max-width: 1200px; */
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    color: #007B5F;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slider {
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    margin: 10px auto;
+    position: relative;
+background-size: auto;
+background-repeat: no-repeat;
+}
+
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.news-ticker {
+    background: green;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 50px;
+}
+
+.news-content {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.news-item {
+    padding-right: 50px; 
+    font-size: larger;
+    color:white ;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.slider img {
+    max-width: 800px;
+    transition: transform 1.5s ease-in-out;
+    
+}
+
+.slider img:hover {
+    transform: scale(1.05);
+}
+
+.images-container img {
+    display: flex;
+    animation: slide 8s infinite;
+    /* background: green; */
+        background-image: url("images/olena-bohovyk-1S_c_O_glv4-unsplash.jpg");
+
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.department,
+.programs,
+.resources,
+.alumni,
+.initiatives,
+.research,
+.news,
+.student-life,
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.department h3,
+.program h4,
+.resource h4,
+.alumnus h4,
+.initiative h4,
+.highlight h4,
+.life h4,
+.testimonial img {
+    margin: 10px 0;
+}
+
+.department div,
+.program,
+.resource,
+.alumnus,
+.initiative,
+.highlight,
+.life,
+.testimonial {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.department div:hover,
+.program:hover,
+.resource:hover,
+.alumnus:hover,
+.initiative:hover,
+.highlight:hover,
+.life:hover,
+.testimonial:hover {
+    transform: scale(1.05);
+    /* background: #007B5F; */
+    background:#0ea2d3;
+}
+
+.alumnus img,
+.initiative img,
+.highlight img,
+.life img,
+.testimonial img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.alumnus{
+    flex: 1 1 20%;
+    margin: 10px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    width: 50%;
+}
+
+.alumnus img{
+    /* max-width: 100%; */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+align-items: center;
+/* margin-left: 20%; */
+}
+
+#mission p{
+    text-align: center;
+    font-size: large;
+}
+
+footer {
+    background-color: #007B5F;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    
+    background-size: cover;
+}
+
+footer nav a {
+    color: white;
+    margin: 10px 15px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+footer p{
+  text-align: center;  
+}
+
+
+.buttons {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #007B5F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005f4e;
+}
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    transition: transform 0.5s ease;
+    transform: translateX(-50%);
+
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control-button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.news-ticker {
+    background: green;
+    color: white;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#nav-controller{
+
+    overflow: hidden;
+    display: none;
+}
+.news-ticker ul {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
